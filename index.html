@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login and Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="loginForm">
+            <h2 >Login</h2><hr>
+            <form id="loginFormElement">
+                <label for="">Username</label>
+                <i class='bx bxs-user'></i>
+                <input type="text" id="loginUsername" placeholder="Username" required>
+
+                <label for="">Password</label>
+                <i class='bx bxs-lock-alt' ></i>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="switchToRegister">Register here</a></p>
+            </form>
+        </div>
+
+        <div class="form-container" id="registerForm">
+            <h2>Register</h2><hr>
+            <form id="registerFormElement">
+                <label for="">Username</label>
+                <i class='bx bxs-user'></i>
+                <input type="text" id="registerUsername" placeholder="Username" required>
+
+                <label for="">Email</label>
+                <i class='bx bxl-gmail' ></i>
+                <input type="email" id="registerEmail" placeholder="Email" required>
+
+                <label for="">Password</label>
+                <i class='bx bxs-lock-alt' ></i>
+                <input type="password" id="registerPassword" placeholder="Password" required>
+
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" id="switchToLogin">Login here</a></p>
+            </form>
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
